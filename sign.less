@@ -1,0 +1,85 @@
+#sign.sign{
+  z-index: 100;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background:rgba(0,0,0,0.3);
+  .sign-con{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 908px;
+    height: 450px;
+    overflow: hidden;
+    background: url("../img/sign-bg.png") no-repeat;
+    .sign-content{
+      display: flex;
+      flex-wrap: wrap;
+      padding: 70px 25px;
+      position: absolute;
+      right: 10px;
+      width: 342px;
+      height: 425px;
+      background: url("../img/calendar-bg.png") no-repeat ;
+      .sign-empty-item{
+        width: 37px;
+        margin-left: 4px;
+        margin-top: 4px;
+        height: 50px;
+      }
+      .sign-item{
+        position: relative;
+        cursor: pointer;
+        width: 37px;
+        margin-left: 4px;
+        margin-top: 4px;
+        height: 50px;
+        background: url("../img/no-sign.png") no-repeat;
+        .number{
+          position: absolute;
+          font-size:12px;
+          font-family:HurmeGeometricSans1-Bold,HurmeGeometricSans1;
+          font-weight:bold;
+          color: #999;
+          left: 12px;
+          bottom: 0;
+        }
+      }
+    }
+    .sign-go{
+      cursor: pointer;
+      position: absolute;
+      left: 195px;
+      bottom:120px;
+      width: 122px;
+      height: 56px;
+      background-position: center;
+      background: url("../img/sign-btn.png") no-repeat;
+    }
+    .sign-tip{
+      position: absolute;
+      left: 170px;
+      bottom: 80px;
+      font-size:18px;
+      font-weight:500;
+      color:rgba(255,255,255,1);
+      line-height:25px;
+    }
+    .sign-close{
+      cursor: pointer;
+      position: absolute;
+      top: 1%;
+      left: 1%;
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+
+}
